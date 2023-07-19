@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="popup" class="popup">
+        <div class="popupContent">
+            <div class="popupFlag">
+                <img class="popupFlagImg" src="./images/pngegg (3).png" width="200px" alt="" id="popupImg">
+            </div>
+            <div class="popupInfos">
+                <span class="popupName"></span>
+                <span class="popupRegion"></span>
+                <span class="popupSubRegion"></span>
+                <span class="popupCapital"></span>
+                <span class="popupLanguage">Idioma:</span>
+                <span class="popupPopulation"></span>
+                <span class="popupTimeZone">Fuso Horário: </span>
+                <span class="popupBorders">Fronteiras: </span>
+            </div>
+            <div id="popupDivClose" class="popupDivClose">
+                <span class="popupSpanClose" id="popupSpanClose">FECHAR</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="container">
+        <header>
+            <span>CONHECENDO O MUNDO</span>
+        </header>
+        <div class="worldImage">
+            <img src="/images/pngegg (3).png" alt="Planeta Terra">
+        </div>
+    </section>
+
+    <section class="main">
+        <div class="mainSearch">
+            <div class="mainSpan">
+                <span>Selecione um país</span>
+            </div>
+            <div class="mainInput">
+                <input id="searchCountry" type="text" placeholder="Digite o nome do país">
+                <img class="searchImg" src="/images/pesquisa.png" onclick="searchCountry()" alt="">
+            </div>
+        </div>
+    </section>
+
+    <main class="mainCountryContinent">
+        <section class="countryContinent" id="countryContinent">
+            <aside class="countryContinentOptions" id="countryContinentOptions">
+                <ol>
+                    <li id="allFlags" class="active"> <img id="allFlagsImg" src="/images/setas-flechas-color.png" alt=""> Todos </li>
+                    <li id="africa"> <img id="africaImg" src="/images/setas-flechas.png" alt=""> África </li>
+                    <li id="america"> <img id="americaImg" src="/images/setas-flechas.png" alt=""> América </li>
+                    <li id="antartica"> <img id="antarticaImg" src="/images/setas-flechas.png" alt=""> Antártica</li>
+                    <li id="asia"> <img id="asiaImg" src="/images/setas-flechas.png" alt=""> Ásia</li>
+                    <li id="europa"> <img id="europaImg" src="/images/setas-flechas.png" alt=""> Europa</li>
+                    <li id="oceania"> <img id="oceaniaImg" src="/images/setas-flechas.png" alt=""> Oceania</li>
+                </ol>
+            </aside>
+            <aside class="countryFlagsResult">
+                <div id="countryQuantity" class="countryQuantity">Total: 250</div>
+                <div class="countryFlags" id="countryFlags"></div>
+            </aside>
+        </section>
+    </main>
+
+</body>
+
+</html>
